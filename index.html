@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drinks Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Phitron Assignment 02</h1>
+    </div>
+
+    <div class="container">
+      <div class="main-content">
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a drink..."
+          />
+          <button onclick="searchCocktails()">Search</button>
+        </div>
+        <div class="results-grid" id="resultsGrid"></div>
+      </div>
+
+      <div class="cart-container">
+        <h2 class="cart-title">My Drinks List</h2>
+        <h4>Total Drinks: <span id="cartTotal">0</span></h4>
+        <div class="cart-items" id="cartItems"></div>
+      </div>
+    </div>
+
+    <div class="modal" id="detailsModal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="drink-details" id="drinkDetails"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
